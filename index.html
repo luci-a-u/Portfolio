@@ -10,6 +10,8 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
         }
         .container {
             width: 80%;
@@ -20,33 +22,34 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h1, h2 {
+        h1, h2, h3 {
+            margin-top: 0;
+        }
+        h1 {
+            font-size: 2rem;
             color: #333;
-            margin-bottom: 10px;
         }
-        h3 {
-            margin-top: 20px;
+        h2, h3 {
             color: #555;
         }
-        p, li {
-            line-height: 1.6;
-            color: #555;
-        }
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        .contact-info, .education, .skills, .experience, .certifications, .projects, .languages, .interests {
+        .section {
             margin-bottom: 20px;
         }
         .section-title {
-            font-size: 18px;
+            font-size: 1.2rem;
             font-weight: bold;
-            color: #444;
             margin-bottom: 10px;
+            color: #444;
         }
-        .section-content {
-            font-size: 16px;
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        ul li {
+            margin-bottom: 5px;
+        }
+        .contact-info {
+            margin-bottom: 20px;
         }
         .contact-info button {
             background-color: #007bff;
@@ -63,89 +66,87 @@
         .contact-info button:hover {
             background-color: #0056b3;
         }
+        .contact-info p {
+            margin: 10px 0 0;
+        }
+        .objective p {
+            font-size: 1rem;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
             <h1>Aman Singh</h1>
-            <div class="contact-info">
+            <div class="contact-info" role="contentinfo">
                 <button onclick="window.location.href='mailto:knowledgehub0o0oo0@gmail.com'">Email Me</button>
                 <button onclick="window.location.href='tel:+9424339792'">Call Me</button>
                 <p>Location: Singrauli, Madhya Pradesh, India</p>
             </div>
         </header>
 
-        <section class="objective">
-            <h2>Objective</h2>
+        <section class="objective section" aria-labelledby="objective-title">
+            <h2 id="objective-title">Objective</h2>
             <p>A highly motivated and skilled pentester and bug bounty hunter with hands-on experience in web application security, vulnerability testing, and ethical hacking. Seeking a position to leverage my skills and knowledge in a Product Security Analyst role to contribute to securing digital platforms and enhancing security protocols.</p>
         </section>
 
-        <section class="skills">
-            <h3 class="section-title">Skills</h3>
-            <div class="section-content">
-                <ul>
-                    <li>Security Testing: Proficient in manual and automated security testing tools like Burp Suite, Nikto, Nmap, and Gobuster.</li>
-                    <li>Vulnerability Discovery: Expertise in identifying vulnerabilities like XSS, SQL Injection, CSRF, and Remote Code Execution.</li>
-                    <li>Bug Bounty Platforms: Experienced in participating and submitting bugs on platforms on HackerOne.</li>
-                    <li>Networking: Knowledge of network security and vulnerability scanning.</li>
-                    <li>Programming: Familiar with Python, Bash, Javascript and basic scripting for automation of security tests.</li>
-                    <li>Web Application Security: Expertise in OWASP top 10 vulnerabilities and remediation.</li>
-                    <li>CI/CD Security: Understanding of DevSecOps practices for integrating security into the development lifecycle.</li>
-                </ul>
-            </div>
+        <section class="skills section" aria-labelledby="skills-title">
+            <h2 id="skills-title" class="section-title">Skills</h2>
+            <ul>
+                <li>Proficient in manual and automated security testing tools like Burp Suite, Nikto, Nmap, and Gobuster.</li>
+                <li>Expertise in identifying vulnerabilities like XSS, SQL Injection, CSRF, and Remote Code Execution.</li>
+                <li>Experienced in submitting bugs on bug bounty platforms like HackerOne.</li>
+                <li>Knowledge of network security and vulnerability scanning.</li>
+                <li>Proficient in Python, Bash, JavaScript, and basic scripting for automating security tests.</li>
+                <li>Expertise in OWASP Top 10 vulnerabilities and remediation.</li>
+                <li>Understanding of DevSecOps practices for integrating security into the development lifecycle.</li>
+            </ul>
         </section>
 
-        <section class="experience">
-            <h3 class="section-title">Experience</h3>
-            <div class="section-content">
-                <ul>
-                    <li><strong>Bug Bounty Hunter</strong> - Freelance (April 2023 – Present)
-                        <ul>
-                            <li>Conduct vulnerability assessments and penetration tests on various applications.</li>
-                            <li>Report and track findings through bug bounty platforms on HackerOne.</li>
-                            <li>Prioritize vulnerabilities based on severity and impact to assist clients in mitigating risks.</li>
-                        </ul>
-                    </li>
-                    <li><strong>Penetration Tester</strong> - Self-employed (January 2022 – March 2023)
-                        <ul>
-                            <li>Performed penetration testing on web applications, networks, and mobile applications for small businesses.</li>
-                            <li>Used tools like Burp Suite, Nikto, and Nmap to identify security vulnerabilities.</li>
-                            <li>Generated comprehensive reports and recommendations for enhancing security measures.</li>
-                            <li>Delivered client presentations on vulnerabilities found and risk mitigation strategies.</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+        <section class="experience section" aria-labelledby="experience-title">
+            <h2 id="experience-title" class="section-title">Experience</h2>
+            <ul>
+                <li>
+                    <strong>Bug Bounty Hunter</strong> - Freelance (April 2023 – Present)
+                    <ul>
+                        <li>Conducted vulnerability assessments and penetration tests on various applications.</li>
+                        <li>Reported and tracked findings through bug bounty platforms on HackerOne.</li>
+                        <li>Prioritized vulnerabilities based on severity and impact to assist clients in mitigating risks.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Penetration Tester</strong> - Self-employed (January 2022 – March 2023)
+                    <ul>
+                        <li>Performed penetration testing on web applications, networks, and mobile applications for small businesses.</li>
+                        <li>Used tools like Burp Suite, Nikto, and Nmap to identify security vulnerabilities.</li>
+                        <li>Generated comprehensive reports and recommendations for enhancing security measures.</li>
+                        <li>Delivered client presentations on vulnerabilities found and risk mitigation strategies.</li>
+                    </ul>
+                </li>
+            </ul>
         </section>
 
-        <section class="education">
-            <h3 class="section-title">Education</h3>
-            <div class="section-content">
-                <p><strong>Class 12 (Science, Math, Computer Science)</strong> - CBSE, India (Passed: 2024)</p>
-            </div>
+        <section class="education section" aria-labelledby="education-title">
+            <h2 id="education-title" class="section-title">Education</h2>
+            <p><strong>Class 12 (Science, Math, Computer Science)</strong> - CBSE, India (Passed: 2024)</p>
         </section>
         
-        <section class="languages">
-            <h3 class="section-title">Languages</h3>
-            <div class="section-content">
-                <ul>
-                    <li>English: Proficient</li>
-                    <li>Hindi: Native</li>
-                </ul>
-            </div>
+        <section class="languages section" aria-labelledby="languages-title">
+            <h2 id="languages-title" class="section-title">Languages</h2>
+            <ul>
+                <li>English: Proficient</li>
+                <li>Hindi: Native</li>
+            </ul>
         </section>
 
-        <section class="interests">
-            <h3 class="section-title">Interests</h3>
-            <div class="section-content">
-                <ul>
-                    <li>Ethical hacking</li>
-                    <li>Cybersecurity research</li>
-                    <li>Bug bounty hunting</li>
-                    <li>Networking and technology</li>
-                </ul>
-            </div>
+        <section class="interests section" aria-labelledby="interests-title">
+            <h2 id="interests-title" class="section-title">Interests</h2>
+            <ul>
+                <li>Ethical hacking</li>
+                <li>Cybersecurity research</li>
+                <li>Bug bounty hunting</li>
+                <li>Networking and technology</li>
+            </ul>
         </section>
     </div>
 </body>
