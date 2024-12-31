@@ -48,14 +48,20 @@
         .section-content {
             font-size: 16px;
         }
-        .contact-info p {
+        .contact-info button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 16px;
             margin: 5px 0;
+            display: inline-block;
         }
-        .skills ul {
-            padding-left: 20px;
-        }
-        .experience ul, .projects ul {
-            padding-left: 20px;
+        .contact-info button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
@@ -63,9 +69,11 @@
     <div class="container">
         <header>
             <h1>Aman Singh</h1>
-            <p>Email: <a href="mailto:knowledgehub0o0oo0@gmail.com">knowledgehub0o0oo0@gmail.com</a></p>
-            <p>Phone: <a href="tel:+9424339792">9424339792</a></p>
-            <p>Location: Singrauli, Madhya Pradesh, India</p>
+            <div class="contact-info">
+                <button onclick="window.location.href='mailto:knowledgehub0o0oo0@gmail.com'">Email Me</button>
+                <button onclick="window.location.href='tel:+9424339792'">Call Me</button>
+                <p>Location: Singrauli, Madhya Pradesh, India</p>
+            </div>
         </header>
 
         <section class="objective">
@@ -142,4 +150,3 @@
     </div>
 </body>
 </html>
-
