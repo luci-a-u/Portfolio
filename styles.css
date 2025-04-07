@@ -1,0 +1,165 @@
+:root {
+  --bg-color: #f4f4f4;
+  --text-color: #1a1a1a;
+  --link-color: #0077ff; /* Aman's blue */
+  --accent-color: #005fcc;
+  --card-bg: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode {
+  --bg-color: #0e1117;
+  --text-color: #e6e6e6;
+  --link-color: #3399ff; /* Softer blue for dark mode */
+  --accent-color: #1a73e8;
+  --card-bg: #1c1f26;
+  --shadow: rgba(255, 255, 255, 0.05);
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1, h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: var(--accent-color);
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.location {
+  text-align: center;
+  font-style: italic;
+  margin-top: 0.5rem;
+  color: var(--accent-color);
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contact-links a {
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.contact-links a:hover {
+  color: var(--accent-color);
+}
+
+.theme-toggle button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--link-color);
+}
+
+ul.styled-list {
+  list-style-type: none; /* Remove default bullets */
+  padding-left: 0;        /* Remove default padding */
+  margin-left: 0;
+}
+
+ul.styled-list li {
+  position: relative;
+  padding-left: 1.8rem;   /* Space for the custom arrow */
+  margin-bottom: 0.75rem;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+ul.styled-list li::before {
+  content: "➤";           /* Custom arrow bullet */
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--link-color); /* Uses your theme's blue color */
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.bulleted {
+  padding-left: 1.5rem;
+}
+
+.doc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.doc-card {
+  background-color: var(--card-bg);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px var(--shadow);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.doc-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px var(--shadow);
+}
+
+.download-btn {
+  margin: 1rem 0;
+  padding: 0.5rem 1.2rem;
+  font-weight: bold;
+  background-color: var(--link-color);
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: var(--accent-color);
+}
+
+.preview-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.preview-img.zoomable:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #999;
+}
+
