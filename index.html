@@ -1,203 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aman Singh - Resume</title>
-    <style>
-        /* General Styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-            line-height: 1.8;
-        }
-
-        /* Container Styles */
-        .container {
-            width: 90%;
-            max-width: 850px;
-            margin: 50px auto;
-            padding: 30px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Header Styles */
-        header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            color: #333;
-        }
-
-        .contact-info {
-            margin-top: 10px;
-        }
-
-        .contact-info button {
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-            margin: 5px 10px;
-            transition: background-color 0.3s ease;
-        }
-
-        .contact-info button:hover {
-            background-color: #0056b3;
-        }
-
-        .contact-info p {
-            margin-top: 10px;
-            font-size: 1rem;
-            color: #666;
-        }
-
-        /* Section Styles */
-        .section {
-            margin-bottom: 30px;
-        }
-
-        .section-title {
-            font-size: 1.5rem;
-            color: #444;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #eaeaea;
-            padding-bottom: 5px;
-        }
-
-        .section-content {
-            margin-top: 15px;
-        }
-
-        /* List Styles */
-        ul {
-            list-style: disc;
-            padding-left: 20px;
-        }
-
-        ul li {
-            margin-bottom: 10px;
-            font-size: 1rem;
-            color: #555;
-        }
-
-        ul li ul {
-            list-style: circle;
-            padding-left: 20px;
-            margin-top: 5px;
-        }
-
-        ul li ul li {
-            font-size: 0.95rem;
-        }
-
-        /* Objective Paragraph */
-        .objective p {
-            font-size: 1.1rem;
-            color: #555;
-            text-align: justify;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aman Singh's Portfolio - Cybersecurity, Pentesting, Bug Bounty" />
+  <title>Aman Singh | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.6s ease-out forwards;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .delay-1 { animation-delay: 0.3s; }
+    .delay-2 { animation-delay: 0.6s; }
+    .delay-3 { animation-delay: 0.9s; }
+  </style>
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <h1>Aman Singh</h1>
-            <div class="contact-info">
-                <button onclick="window.location.href='mailto:knowledgehub0o0oo0@gmail.com'">Email Me</button>
-                <button onclick="window.location.href='tel:+919424339792'">Call Me</button>
-                <button onclick="window.location.href='https://www.linkedin.com/in/lucifer-a-u/'">LinkedIn</button>
-                <button onclick="window.location.href='https://hackerone.com/luci_a_u'">Hackerone</button>
-                <button onclick="window.location.href='https://luci-a-u.github.io/Resume/Cover-letter.html'">Cover Letter</button>
-            </div>
-        </header>
+  <header class="navbar fade-in delay-1">
+    <div class="logo">Aman Singh</div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <label class="switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider"></span>
+          </label>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-        <section class="objective section">
-            <h2 class="section-title">Objective</h2>
-            <div class="section-content">
-                <p>
-                    A highly motivated and skilled pentester and bug bounty hunter with hands-on experience in web application security,
-                    vulnerability testing, and ethical hacking. Seeking a position to leverage my skills and knowledge in a Product Security Analyst
-                    role to contribute to securing digital platforms and enhancing security protocols.
-                </p>
-            </div>
-        </section>
-
-        <section class="skills section">
-            <h2 class="section-title">Skills</h2>
-            <div class="section-content">
-                <ul>
-                    <li>Proficient in manual and automated security testing tools like Burp Suite, Nikto, Nmap, and Gobuster.</li>
-                    <li>Expertise in identifying vulnerabilities like XSS, SQL Injection, CSRF, and Remote Code Execution.</li>
-                    <li>Experienced in submitting bugs on bug bounty platforms like HackerOne.</li>
-                    <li>Knowledge of network security and vulnerability scanning.</li>
-                    <li>Proficient in Python, Bash, JavaScript, and basic scripting for automating security tests.</li>
-                    <li>Expertise in OWASP Top 10 vulnerabilities and remediation.</li>
-                    <li>Understanding of DevSecOps practices for integrating security into the development lifecycle.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="experience section">
-            <h2 class="section-title">Experience</h2>
-            <div class="section-content">
-                <ul>
-                    <li>
-                        <strong>Bug Bounty Hunter</strong> - Freelance (July 2020 – Present)
-                        <ul>
-                            <li>Conducted vulnerability assessments and penetration tests on various applications.</li>
-                            <li>Reported and tracked findings through bug bounty platforms on HackerOne.</li>
-                            <li>Prioritized vulnerabilities based on severity and impact to assist clients in mitigating risks.</li>
-                            <li>Performed penetration testing on web applications, networks, and mobile applications for small businesses.</li>
-                            <li>Used tools like Burp Suite, Nikto, and Nmap to identify security vulnerabilities.</li>
-                            <li>Generated comprehensive reports and recommendations for enhancing security measures.</li>
-                            <li>Delivered client presentations on vulnerabilities found and risk mitigation strategies.</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="education section">
-            <h2 class="section-title">Education</h2>
-            <div class="section-content">
-                <p><strong>Class 12 (Science, Math, Computer Science)</strong> - CBSE, India (Passed: 2024)</p>
-            </div>
-        </section>
-
-        <section class="languages section">
-            <h2 class="section-title">Languages</h2>
-            <div class="section-content">
-                <ul>
-                    <li>English: Proficient</li>
-                    <li>Hindi: Native</li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="interests section">
-            <h2 class="section-title">Interests</h2>
-            <div class="section-content">
-                <ul>
-                    <li>Ethical hacking</li>
-                    <li>Cybersecurity research</li>
-                    <li>Bug bounty hunting</li>
-                    <li>Networking and technology</li>
-                </ul>
-            </div>
-        </section>
+  <section class="hero fade-in delay-2">
+    <div class="hero-content">
+      <h1>Hi, I'm Aman Singh</h1>
+      <p>Security Analyst Intern | Bug Bounty Hunter | Pentester</p>
+      <a class="btn" href="Aman-Singh-Resume.pdf" download>Download Resume</a>
     </div>
+  </section>
+
+  <section id="about" class="section fade-in delay-3">
+    <h2>About Me</h2>
+    <p>
+      I'm a passionate and self-taught cybersecurity enthusiast with real-world experience in ethical hacking and bug bounties on platforms like HackerOne. After completing my 12th with Science, Math, and Computer Science in 2024, I dedicated myself full-time to penetration testing and vulnerability analysis. I aspire to grow in the field of product security and contribute to securing digital ecosystems.
+    </p>
+  </section>
+
+  <section id="skills" class="section fade-in delay-1">
+    <h2>Skills</h2>
+    <ul>
+      <li>Manual & Automated Testing (Burp Suite, Nmap, Nikto, Gobuster)</li>
+      <li>Vulnerability Discovery: XSS, SQLi, CSRF, RCE</li>
+      <li>Scripting: Python, Bash, JavaScript</li>
+      <li>Knowledge of OWASP Top 10 & DevSecOps Practices</li>
+      <li>Bug Bounty Reporting on HackerOne</li>
+    </ul>
+  </section>
+
+  <section id="experience" class="section fade-in delay-2">
+    <h2>Experience</h2>
+    <h3>Freelance Bug Bounty Hunter (2020 - Present)</h3>
+    <ul>
+      <li>Reported vulnerabilities like XSS, SQLi, and RCE on HackerOne</li>
+      <li>Performed pentests on web, network, and mobile platforms</li>
+      <li>Generated detailed security reports and remediation plans</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section fade-in delay-3">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:knowledgehub0o0oo0@gmail.com">knowledgehub0o0oo0@gmail.com</a></p>
+    <p>Phone: <a href="tel:+919424339792">+91-9424339792</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/lucifer-a-u/" target="_blank">lucifer-a-u</a></p>
+    <p>HackerOne: <a href="https://hackerone.com/luci_a_u" target="_blank">luci_a_u</a></p>
+    <p>GitHub: <a href="https://github.com/luci-a-u" target="_blank">luci-a-u</a></p>
+  </section>
+
+  <section id="projects" class="section fade-in delay-1">
+    <h2>Projects <span class="badge">Coming Soon</span></h2>
+    <p>Stay tuned for upcoming case studies and walkthroughs from my bug bounty journey and CTF challenges.</p>
+  </section>
+
+  <section id="blog" class="section fade-in delay-2">
+    <h2>Blog <span class="badge">Coming Soon</span></h2>
+    <p>I plan to write about pentesting methodologies, cybersecurity trends, and bug bounty case studies.</p>
+  </section>
+
+  <footer class="fade-in delay-3">
+    <p>&copy; 2025 Aman Singh. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    toggle.addEventListener('change', () => {
+      document.documentElement.setAttribute('data-theme', toggle.checked ? 'dark' : 'light');
+    });
+
+    const sections = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.animationPlayState = 'running';
+        }
+      });
+    }, { threshold: 0.1 });
+    sections.forEach(section => {
+      section.style.animationPlayState = 'paused';
+      observer.observe(section);
+    });
+  </script>
 </body>
+
 </html>
