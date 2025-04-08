@@ -7,6 +7,15 @@
   --shadow: rgba(0, 0, 0, 0.1);
 }
 
+.medium-box {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: var(--card-bg, #f9f9f9);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
+}
+
 body.dark-mode {
   --bg-color: #0e1117;
   --text-color: #e6e6e6;
