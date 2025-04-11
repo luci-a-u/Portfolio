@@ -30,7 +30,7 @@ Check out the live portfolio here: [luci-a-u.github.io/Portfolio](https://luci-a
 
 ## 📧 Contact
 
-- **Email**: [knowledgehub0o0oo0@gmail.com](mailto:knowledgehub0o0oo0@gmail.com)
+- **Email**: [aman.singh.pentest@gmail.com](mailto:aman.singh.pentest@gmail.com)
 - **GitHub**: [@luci-a-u](https://github.com/luci-a-u)  
 - **LinkedIn**: [Lucifer A U](https://www.linkedin.com/in/lucifer-a-u/)  
 - **HackerOne**: [@luci_a_u](https://hackerone.com/luci_a_u)
