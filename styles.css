@@ -217,3 +217,11 @@ input:checked + .slider {
 input:checked + .slider::before {
   transform: translateX(24px);
 }
+
+/* Add this at the end of your CSS */
+.theme-toggle.side-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+}
