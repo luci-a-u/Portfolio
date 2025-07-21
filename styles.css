@@ -218,14 +218,16 @@ input:checked + .slider::before {
   transform: translateX(24px);
 }
 
-/* Add this at the end of your CSS */
 .theme-toggle.side-toggle {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  background: var(--card-bg);
-  padding: 0.3rem 0.5rem;
-  border-radius: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: var(--card-bg);
+  padding: 0.4rem 0.6rem;
+  border-radius: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  z-index: 999;
 }
 
