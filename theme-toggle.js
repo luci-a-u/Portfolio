@@ -13,3 +13,4 @@ document.addEventListener("DOMContentLoaded", function () {
     localStorage.setItem("theme", isChecked ? "dark" : "light");
   });
 });
+
