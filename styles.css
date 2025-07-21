@@ -223,7 +223,7 @@ header {
   position: relative;
 }
 
-/* Style the theme toggle when it's used in the top-right corner */
+/* Style the theme toggle when it's used in the top-right corner. */
 .theme-toggle.side-toggle {
   position: absolute;
   top: 1rem;
