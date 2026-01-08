@@ -11,9 +11,7 @@ Check out the live portfolio here: [luci-a-u.github.io/Portfolio](https://luci-a
 
 - `index.html` - Main HTML structure of the portfolio  
 - `styles.css` - Custom styling with a sleek blue theme and arrow-style bullets  
-- `theme-toggle.js` - Script for light/dark mode toggle  
-- `Cover-Letter.pdf` / `Resume.pdf` - Downloadable versions of my resume and cover letter  
-- `Cover-Letter.jpg` / `Resume.jpg` - Image previews of documents
+- `theme-toggle.js` - Script for light/dark mode toggle 
 
 ---
 
@@ -22,7 +20,6 @@ Check out the live portfolio here: [luci-a-u.github.io/Portfolio](https://luci-a
 - 🌙 **Light/Dark theme toggle**
 - 📱 **Mobile-responsive layout**
 - 🔗 **Interactive links to contact, GitHub, HackerOne, and LinkedIn**
-- 📄 **Downloadable Resume and Cover Letter**
 - 💙 **Custom blue color theme**
 - ➤ **Arrow-style bullet lists for neat readability**
 
@@ -59,4 +56,4 @@ This project is licensed under the [MIT License](LICENSE) – feel free to use t
 
 ---
 
-> © 2025 Aman Singh – Built with ❤️ and a love for cybersecurity.
+> © 2026 Aman Singh – Built with ❤️ and a love for cybersecurity.
