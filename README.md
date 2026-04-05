@@ -1,59 +1,26 @@
-# 💼 Aman Singh's Cybersecurity Portfolio
+# Aman Singh — Portfolio
 
-Welcome to my personal portfolio repository! This project showcases my journey, skills, experience, and accomplishments in the field of cybersecurity, ethical hacking, and bug bounty hunting. It's built using HTML, CSS, and JavaScript and is fully responsive with a dark/light theme toggle.
+Personal portfolio website showcasing my skills, projects, and write-ups as a web application penetration tester.
 
-### 🌐 Live Demo
-Check out the live portfolio here: [luci-a-u.github.io/Portfolio](https://luci-a-u.github.io/Portfolio)
+**Live:** [luci-a-u.github.io/Portfolio](https://luci-a-u.github.io/Portfolio)
 
----
+## Stack
+- HTML · CSS · Vanilla JS
+- Dark / light theme toggle
+- Mobile responsive
 
-## 📄 Contents
+## Sections
+- About & stats
+- Technical skills
+- Projects
+- Write-ups
+- Training
+- Contact
 
-- `index.html` - Main HTML structure of the portfolio  
-- `styles.css` - Custom styling with a sleek blue theme and arrow-style bullets  
-- `theme-toggle.js` - Script for light/dark mode toggle 
-
----
-
-## 📌 Features
-
-- 🌙 **Light/Dark theme toggle**
-- 📱 **Mobile-responsive layout**
-- 🔗 **Interactive links to contact, GitHub, HackerOne, and LinkedIn**
-- 💙 **Custom blue color theme**
-- ➤ **Arrow-style bullet lists for neat readability**
-
----
-
-## 📧 Contact
-
-- **Email**: [aman.singh.pentest@gmail.com](mailto:aman.singh.pentest@gmail.com)
-- **GitHub**: [@luci-a-u](https://github.com/luci-a-u)  
-- **LinkedIn**: [Lucifer A U](https://www.linkedin.com/in/lucifer-a-u/)  
-- **HackerOne**: [@luci_a_u](https://hackerone.com/luci_a_u)
+## Contact
+**Email:** Aman.Singh.Pentest@gmail.com  
+**GitHub:** [@luci-a-u](https://github.com/luci-a-u)  
+**LinkedIn:** [luci-a-u](https://www.linkedin.com/in/luci-a-u/)
 
 ---
-
-## ⚙️ Tech Stack
-
-- HTML5  
-- CSS3 (with custom styling)  
-- JavaScript (Vanilla)  
-- Font Awesome for icons  
-- Google Fonts (Orbitron + Roboto)
-
----
-
-## 📢 Contributing
-
-This is a personal project, but if you notice bugs or want to suggest enhancements, feel free to open an issue or pull request!
-
----
-
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE) – feel free to use the code with attribution.
-
----
-
-> © 2026 Aman Singh – Built with ❤️ and a love for cybersecurity.
+© 2026 Aman Singh
